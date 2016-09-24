@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013-2016 Charkey. All rights reserved.
+ * Copyright (c) 2013-2015 Charkey. All rights reserved.
  *
  * This software is the confidential and proprietary information of Charkey.
  * You shall not disclose such Confidential Information and shall use it only
@@ -15,14 +15,14 @@
 
 package cn.simastudio.charkey.test;
 
+import java.nio.ByteOrder;
+
 /**
- * Created by Qikai on 2016/7/26.
+ * Created by Qikai on 2016/8/9.
  */
-public interface TestInterface {
+public class ByteOrderTest {
 
-    public static final String NAME = "Charkey";
-
-    int age = 19;
-
-
+    public static void main(String[] args) {
+        System.out.println(ByteOrder.nativeOrder());
+    }
 }
